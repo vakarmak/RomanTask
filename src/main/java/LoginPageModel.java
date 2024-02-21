@@ -35,4 +35,8 @@ public class LoginPageModel {
    public boolean isLoginSuccessful() {
       return driver.getCurrentUrl().equals("https://the-internet.herokuapp.com/secure");
    }
+
+   public boolean isErrorTooltipDisplayed(String expectedText) {
+      return driver.findElement(By.id("flash")).getText().contains(expectedText);
+   }
 }
