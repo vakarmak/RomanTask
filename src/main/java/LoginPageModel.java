@@ -14,13 +14,11 @@ public class LoginPageModel {
 
    public void enterUsername(String username) {
       WebElement usernameInput = driver.findElement(usernameField);
-      usernameInput.clear();
       usernameInput.sendKeys(username);
    }
 
    public void enterPassword(String password) {
       WebElement passwordInput = driver.findElement(passwordField);
-      passwordInput.clear();
       passwordInput.sendKeys(password);
    }
 
